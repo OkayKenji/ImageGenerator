@@ -37,7 +37,7 @@ with open('text.csv', 'r') as csvfile:
     csv_reader = csv.reader(csvfile)
     rows = list(csv_reader)
 
-num_threads = 99
+num_threads = 50
 rows_per_thread = len(rows) // num_threads
 
 # Create and start threads
